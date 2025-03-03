@@ -1,2 +1,19 @@
-# Configuración sensible
+# Archivos y carpetas de Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Archivos y carpetas de Django
+db.sqlite3
+media/
+staticfiles/
+env/
+venv/
+
+# Archivos de configuración sensibles
 .env
+*.env
+
+# Archivos generados por Docker
+*.pid
