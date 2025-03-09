@@ -1,19 +1,16 @@
-# Archivos y carpetas de Python
+*.pyc
 __pycache__/
-*.py[cod]
-*.sqlite3
-*.log
-
-# Archivos y carpetas de Django
-db.sqlite3
-media/
-staticfiles/
-env/
-venv/
-
-# Archivos de configuración sensibles
 .env
-*.env
-
-# Archivos generados por Docker
-*.pid
+*.sqlite3
+.DS_Store
+venv/
+env/
+.idea/
+.vscode/
+*.log
+*.pot
+*.mo
+media/
+static/
+db.sqlite3
+.coverage
