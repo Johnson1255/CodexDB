@@ -1,7 +1,7 @@
 # CodexDB
 
 <div align="center">
-  <img src="./docs/logo.png" alt="CodexDB Logo" />
+  <img src="./docs/img/logo.png" alt="CodexDB Logo" />
   <p><strong>Base de datos flexible para conversión de codificaciones en tiempo real</strong></p>
 </div>
 
@@ -124,16 +124,16 @@ curl -X GET http://localhost:8000/api/texts/available_encodings/
 A continuación se muestran algunas capturas de las pruebas realizadas con CodexDB.
 
 ### Almacenamiento de texto en UTF-8
-![Almacenamiento UTF-8](docs/utf8_storage.png)
+![Almacenamiento UTF-8](./docs/img/POST-data1.png)
 
 ### Conversión de UTF-8 a ISO-8859-1
-![Conversión a ISO-8859-1](docs/conversion_iso.png)
+![Conversión a ISO-8859-1](./docs/img/Convert-data1.png)
 
 ### Manejo de caracteres especiales
-![Caracteres Especiales](docs/special_chars.png)
+![Caracteres Especiales](./docs/img/GET-encodings.png)
 
 ### Panel de administración
-![Panel Admin](docs/admin_panel.png)
+![Panel Admin](./docs/img/Admin-panel.png)
 
 ## 🧪 Casos de uso
 
@@ -180,7 +180,7 @@ Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICEN
 ## 🎉 Imagen del día
  
  <p align="center">
-   <img src="./docs/CRUD.jpg" />
+   <img src="./docs/img/CRUD.jpg" />
  </p>
 
 
