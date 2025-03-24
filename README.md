@@ -52,13 +52,19 @@ Esta API RESTful construida con Django y PostgreSQL resuelve el problema común 
 2. **Crear archivo de variables de entorno**:
    ```bash
    # Crea un archivo .env con los siguientes contenidos
-   SECRET_KEY=your_secret_key_here
+   
+   # Clave secreta de Django
+   SECRET_KEY=tu_clave_secreta_generada_aqui
+
+   # Modo de depuración (True para desarrollo, False para producción)
    DEBUG=True
-   DB_NAME=encoding_db
-   DB_USER=postgres
-   DB_PASSWORD=postgres
-   DB_HOST=db
-   DB_PORT=5432
+   
+   # Configuración de base de datos
+   DB_NAME=encoding_db        # Nombre de tu base de datos
+   DB_USER=tu_usuario_db      # Nombre de usuario de PostgreSQL
+   DB_PASSWORD=tu_contraseña  # Contraseña para el usuario de la base de datos
+   DB_HOST=db                 # Nombre del servicio de base de datos en Docker
+   DB_PORT=5432               # Puerto estándar de PostgreSQL
    ```
 
 3. **Iniciar los contenedores Docker**:
@@ -141,6 +147,13 @@ A continuación se muestran algunas capturas de las pruebas realizadas con Codex
 - **Internacionalización**: Manejo de textos en múltiples idiomas con diferentes requisitos de codificación.
 - **Migración de datos**: Facilita la conversión de datos durante migraciones entre sistemas con estándares diferentes.
 - **Análisis de texto**: Preprocesamiento de datos textuales para análisis o minería de datos.
+
+### 🛡️ Notas de Seguridad
+
+- **Nunca** compartas tu archivo `.env`
+- Añade `.env` a tu `.gitignore`
+- Usa contraseñas seguras y únicas
+- En producción, establece `DEBUG=False`
 
 ## 📚 Estructura del proyecto
 
